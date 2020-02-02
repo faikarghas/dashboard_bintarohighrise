@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html{
+    /* default 16px */
+    /* font-size: 10px; */
+    font-size: 62.5%;
+
+    // @include respond(big-desktop) { // width >= 1800
+    //     font-size: 77%; //1rem = 12, 12/16
+    // }
+
+    // @include respond(tab-land) { // width <= 1240?
+    //     font-size: 56.25%; //1rem = 9px, 9/16
+    // }
+
+    @include respond(tab-port) { // width <= 900
+        font-size: 50%; //1rem = 8px, 8/16
+    }
+    @include respond(phone) { // width <= 600
+        font-size: 35%; //1rem =
+    }
+    @include respond(phone375) { // width <= 600
+        font-size: 30%; //1rem =
+    }
+}
+
+body {
+    box-sizing: border-box;
+    @include respond(tab-port) { // width <= 900
+        padding: 0 ;
+    }
+    font-family: 'Brandon-grotesque-regular', sans-serif;
+    overflow-x: hidden;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {outline:0;}

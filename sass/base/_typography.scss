@@ -1,0 +1,50 @@
+p{
+    font-size: 1.8rem !important;
+    @include respond(phone){
+        font-size: 18px;
+    }
+}
+
+li{
+    font-size: 1.8rem !important;
+    @include respond(phone){
+        font-size: 18px;
+    }
+}
+
+table{
+    tr{
+        th{
+            font-size: 1.8rem !important;
+            @include respond(phone){
+                font-size: 18px;
+            }
+        }
+        td{
+            font-size: 1.6rem !important;
+            @include respond(phone){
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// span{
+//     font-size: 1.8rem !important;
+//     @include respond(phone){
+//         font-size: 18px;
+//     }
+// }
+
+.MuiSvgIcon-root {
+    font-size: 1.8rem !important;
+}
+
+input{
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    &:focus{
+        outline: none;
+    }
+}
+
