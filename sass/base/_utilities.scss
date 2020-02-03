@@ -12,23 +12,12 @@
 }
 
 
-.button_login{
-    padding: 0 3.5rem !important;
-    height: 2.81rem !important;
-    line-height: 2.8rem !important;
-    border-radius: 7px !important;
-    background-color: #0070f3 !important;
-    box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39) !important;
-    color: white !important;
-    margin: 3rem 0 2rem !important;
-    &:hover{
-        background: rgba(0,118,255,0.9) !important;
-        box-shadow: 0 6px 20px rgba(0,118,255,0.23) !important;
-    }
-}
-
 .avatar {
     margin: 8px;
     background-color: #000000 !important;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.39) !important;
+}
+
+.MuiAppBar-colorPrimary{
+    background-color: black !important;
 }

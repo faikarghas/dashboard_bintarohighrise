@@ -6,26 +6,20 @@ import TableList from '../components/tableLeads'
 import {getCookie} from '../lib/cookie'
 import * as action from '../redux/actionIndex'
 
-function Leads() {
-    const [dataLeads,setDataLeads] = useState([])
-    useEffect(() => {
-        fetch('https://api.bintarojayahighrise.com/api/getform')
-        .then( r => r.json() )
-        .then( data => {
-            setDataLeads(data)
-            console.log(data);
-        });
-      }, [])
+function Leads({data_leads}) {
     return (
         <div>
             <Drawer>
-                <TableList data={dataLeads}/>
+                <TableList data={data_leads}/>
             </Drawer>
         </div>
     )
 }
 
 Leads.getInitialProps = async (ctx) => {
+    const res = await fetch('https://api.bintarojayahighrise.com/api/getform')
+    const data_leads = await res.json()
+
     if(ctx.res){
       ctx.res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
     }
@@ -41,12 +35,10 @@ Leads.getInitialProps = async (ctx) => {
     if(!token && token !== undefined && ctx.pathname === '/leads'){
         if(process.browser){
             Router.push('/login')
-        } else {
-
         }
     }
 
-    return {  }
+    return { data_leads }
   }
 
 

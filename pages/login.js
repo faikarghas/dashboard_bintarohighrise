@@ -21,9 +21,9 @@ import * as Yup from 'yup';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="body2" color="textSecondary" align="center" className="copyright">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color="inherit" href="https://www.bintarojayahighrise.com">
         bintarojayahighrise
       </Link>{' '}
       {new Date().getFullYear()}
@@ -88,7 +88,6 @@ function SignIn({authenticate}) {
         </Typography>
         <form className={classes.form} onSubmit={formik.handleSubmit}>
           <TextField
-            variant="outlined"
             margin="normal"
             required
             fullWidth
@@ -102,7 +101,6 @@ function SignIn({authenticate}) {
             onChange={formik.handleChange} value={formik.values.email || ''}
           />
           <TextField
-            variant="outlined"
             margin="normal"
             required
             fullWidth
