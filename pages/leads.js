@@ -1,16 +1,71 @@
 import React, {useEffect,useState} from 'react'
 import fetch from 'isomorphic-unfetch';
 import Router from 'next/router'
+import Typography from '@material-ui/core/Typography';
 import Drawer from '../components/drawer'
 import TableList from '../components/tableLeads'
 import {getCookie} from '../lib/cookie'
 import * as action from '../redux/actionIndex'
+import { MDBDataTable } from 'mdbreact';
+
+import { CSVLink, CSVDownload } from "react-csv";
+
 
 function Leads({data_leads}) {
+    const data = {
+        columns: [
+        {
+            label: 'Name',
+            field: 'name',
+            sort: 'asc',
+            width: 150
+        },
+        {
+            label: 'Category',
+            field: 'category',
+            sort: 'asc',
+            width: 220
+        },
+        {
+            label: 'Email',
+            field: 'email',
+            sort: 'asc',
+            width: 200
+        },
+        {
+            label: 'Phone Number',
+            field: 'phoneNumber',
+            sort: 'asc',
+            width: 150
+        },
+        {
+            label: 'Date',
+            field: 'timestamp',
+            sort: 'asc',
+            width: 150
+        }
+        ],
+        rows: data_leads
+    }
     return (
         <div>
             <Drawer>
-                <TableList data={data_leads}/>
+                {/* <TableList data={data_leads}/> */}
+                <div className="box_action">
+                    <div>
+                        <CSVLink data={data_leads} filename={"data-leads.csv"} style={{textDecoration:'none',color:'black'}}>
+                            <Typography component="h2" variant="h6" color="primary" gutterBottom>
+                            Export to Excel
+                            </Typography>
+                        </CSVLink>
+                    </div>
+                </div>
+                <MDBDataTable
+                striped
+                bordered
+                small
+                data={data}
+                />
             </Drawer>
         </div>
     )

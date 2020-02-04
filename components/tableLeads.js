@@ -25,6 +25,7 @@ export default function Leads({data}) {
     <React.Fragment>
       <div className="box_action">
         <div>
+
           <CSVLink data={data} filename={"data-leads.csv"} style={{textDecoration:'none',color:'black'}}>
             <Typography component="h2" variant="h6" color="primary" gutterBottom>
               Export to Excel

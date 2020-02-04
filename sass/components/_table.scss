@@ -1,0 +1,53 @@
+.dataTables_filter{
+    text-align: right;
+    label{
+        text-align: left;
+        font-weight: 400;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.5rem;
+        input{
+            display: inline-block;
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.dataTables_length{
+    text-align: left;
+    label{
+        text-align: left;
+        font-weight: 400;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.5rem;
+        select{
+            display: inline-block;
+            margin-left: 1rem;
+            font-size: 1.5rem;
+            width: auto;
+        }
+    }
+}
+
+.dataTables_paginate{
+    .pagination{
+        justify-content: flex-end;
+        li{
+            font-size: 1.5rem !important;
+        }
+    }
+}
+
+.dataTables_info{
+    font-size: 1.5rem;
+}
+
+thead[data-test="table-foot"]{
+    display: none;
+}
