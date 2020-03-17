@@ -158,6 +158,14 @@ function MiniDrawer(props) {
                     </ListItem>
                 </a>
             </Link>
+            <Link href="/wa">
+                <a style={{textDecoration:'none',color:'black'}}>
+                    <ListItem button>
+                    <ListItemIcon><PagesIcon /></ListItemIcon>
+                    <ListItemText primary={'Leads'} />
+                    </ListItem>
+                </a>
+            </Link>
         </List>
         <Divider />
         <List>
@@ -166,7 +174,7 @@ function MiniDrawer(props) {
               <ListItemIcon><ExitToAppIcon /></ListItemIcon>
               <ListItemText primary={'Log Out'} />
             </ListItem>
-           ))} 
+           ))}
         </List>
       </Drawer>
       <main className={classes.content}>
