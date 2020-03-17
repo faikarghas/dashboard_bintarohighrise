@@ -17,31 +17,37 @@ function Leads({data_leads}) {
         {
             label: 'Name',
             field: 'name',
-            sort: 'asc',
+            sort: 'disabled',
             width: 150
         },
         {
             label: 'Category',
             field: 'category',
-            sort: 'asc',
+            sort: 'disabled',
             width: 220
         },
         {
             label: 'Email',
             field: 'email',
-            sort: 'asc',
+            sort: 'disabled',
             width: 200
         },
         {
             label: 'Phone Number',
             field: 'phoneNumber',
-            sort: 'asc',
+            sort: 'disabled',
+            width: 150
+        },
+        {
+            label: 'UTM Source',
+            field: 'utmSource',
+            sort: 'disabled',
             width: 150
         },
         {
             label: 'Date',
             field: 'timestamp',
-            sort: 'asc',
+            sort: 'disabled',
             width: 150
         }
         ],
