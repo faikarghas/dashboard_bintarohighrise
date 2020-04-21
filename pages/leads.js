@@ -45,6 +45,18 @@ function Leads({data_leads}) {
             width: 150
         },
         {
+            label: 'UTM Medium',
+            field: 'utmMedium',
+            sort: 'disabled',
+            width: 150
+        },
+        {
+            label: 'UTM Campaign',
+            field: 'utmCampaign',
+            sort: 'disabled',
+            width: 150
+        },
+        {
             label: 'Date',
             field: 'timestamp',
             sort: 'disabled',
