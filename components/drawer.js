@@ -17,6 +17,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import HomeIcon from '@material-ui/icons/Home';
 import PagesIcon from '@material-ui/icons/Pages';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Link from 'next/link'
 import {getCookie} from '../lib/cookie'
 import * as action from '../redux/actionIndex'
@@ -161,8 +162,8 @@ function MiniDrawer(props) {
             <Link href="/wa">
                 <a style={{textDecoration:'none',color:'black'}}>
                     <ListItem button>
-                    <ListItemIcon><PagesIcon /></ListItemIcon>
-                    <ListItemText primary={'Leads'} />
+                    <ListItemIcon><WhatsAppIcon /></ListItemIcon>
+                    <ListItemText primary={'Whatsapp'} />
                     </ListItem>
                 </a>
             </Link>

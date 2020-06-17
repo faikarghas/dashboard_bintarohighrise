@@ -9,7 +9,7 @@ function Index() {
   return (
     <div>
       <Drawer>
-        <h1>home</h1>
+
       </Drawer>
     </div>
   )
