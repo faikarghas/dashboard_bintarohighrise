@@ -21,6 +21,12 @@ function Wa({data_leads}) {
             width: 150
         },
         {
+            label: 'Source',
+            field: 'source',
+            sort: 'disabled',
+            width: 150
+        },
+        {
             label: 'Date',
             field: 'create_at',
             sort: 'disabled',

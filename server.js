@@ -1,7 +1,7 @@
 const express       = require('express');
 const next          = require('next');
 const compression   = require('compression')
-const cookieParser = require('cookie-parser');
+// const cookieParser = require('cookie-parser');
 
 require('dotenv').config()
 const port      = process.env.PORT || 3014;
@@ -29,7 +29,7 @@ app.prepare()
 .then(()=>{
     const server = express()
     server.use(compression());
-    server.use(cookieParser());
+    // server.use(cookieParser());
 
 
     server.get('/sitemap.xml', (req, res) => res.status(200).sendFile('sitemap.xml', sitemapOptions));
