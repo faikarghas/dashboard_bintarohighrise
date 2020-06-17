@@ -21,8 +21,26 @@ function Wa({data_leads}) {
             width: 150
         },
         {
-            label: 'Source',
+            label: 'Category',
             field: 'source',
+            sort: 'disabled',
+            width: 150
+        },
+        {
+            label: 'Source',
+            field: 'utmSource',
+            sort: 'disabled',
+            width: 150
+        },
+        {
+            label: 'Medium',
+            field: 'utmMedium',
+            sort: 'disabled',
+            width: 150
+        },
+        {
+            label: 'Campaign',
+            field: 'utmCampaign',
             sort: 'disabled',
             width: 150
         },

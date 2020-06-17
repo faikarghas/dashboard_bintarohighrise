@@ -39,19 +39,19 @@ function Leads({data_leads}) {
             width: 150
         },
         {
-            label: 'UTM Source',
+            label: 'Source',
             field: 'utmSource',
             sort: 'disabled',
             width: 150
         },
         {
-            label: 'UTM Medium',
+            label: 'Medium',
             field: 'utmMedium',
             sort: 'disabled',
             width: 150
         },
         {
-            label: 'UTM Campaign',
+            label: 'Campaign',
             field: 'utmCampaign',
             sort: 'disabled',
             width: 150
