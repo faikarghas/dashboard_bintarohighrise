@@ -67,10 +67,10 @@ function Wa({data_leads}) {
                     </div>
                 </div>
                 <MDBDataTable
-                striped
-                bordered
-                small
-                data={data}
+                    striped
+                    bordered
+                    small
+                    data={data}
                 />
             </Drawer>
         </div>

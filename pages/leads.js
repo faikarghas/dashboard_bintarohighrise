@@ -21,6 +21,12 @@ function Leads({data_leads}) {
             width: 150
         },
         {
+            label: 'Page',
+            field: 'page',
+            sort: 'disabled',
+            width: 220
+        },
+        {
             label: 'Category',
             field: 'category',
             sort: 'disabled',
@@ -112,7 +118,7 @@ Leads.getInitialProps = async (ctx) => {
     }
 
     return { data_leads }
-  }
+}
 
 
 export default Leads
